@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ababd3;    
+    /* background-image: url("../images/achtergrond_groenbos.png");
+    background-image: url("../images/achtergrond_bloessombos.png"); 
+    background-image: url("../images/achtergrond_donkergroenbos.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;  
+    background-size: 80%; */
+}
+
+#achtergrond img {
+    top: 15%; 
+    left: 10%;
+    width: 80%;
+    position: absolute;
+}
+
+h1 {
+    color: rgb(83, 83, 106);
+}
+
+#buttons {
+    top: 30vw;
+}
+
+#HangAapNor1 {
+    width: 22%;
+    top: 13vw;
+    position: absolute;
+    left: 30vw;
+}
+
+#HangAapNor2 {
+    width: 18%;
+    top: 18vw;
+    position: absolute;
+    left: 50vw;
+}
