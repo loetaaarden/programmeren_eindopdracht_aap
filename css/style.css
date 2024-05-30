@@ -5,40 +5,64 @@
 
 body {
     background-color: #ababd3;    
-    /* background-image: url("../images/achtergrond_groenbos.png");
-    background-image: url("../images/achtergrond_bloessombos.png"); 
-    background-image: url("../images/achtergrond_donkergroenbos.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;  
-    background-size: 80%; */
 }
 
-#achtergrond img {
-    top: 15%; 
-    left: 10%;
-    width: 80%;
+#achtergrond {
+    top: 15vh; 
+    left: 10vw;
+    width: 80vw;
     position: absolute;
 }
 
+#iconen img {
+    max-width: 4vw;
+    position: absolute;
+}
+
+#iconen img:first-of-type {
+    top: 3vw;
+    left: 35vw;
+}
+
+#iconen img:nth-child(2) {
+    top: 3vw;
+    left: 45vw;
+}
+
+#iconen img:nth-child(3) {
+    top: 3vw;
+    left: 55vw;
+}
+
 h1 {
-    color: rgb(83, 83, 106);
+    color: rgb(63, 63, 84);
+    position: absolute;
+    left: 38vw;
 }
 
-#buttons {
-    top: 30vw;
+#veranderAchtergrond {
+    position: absolute;
+    top: 20vw;
 }
 
-#HangAapNor1 {
-    width: 22%;
-    top: 13vw;
+#btnMuziek {
+    position: absolute;
+    top: 25vw;
+}
+
+#naam {
+    position: absolute;
+    top: 15vw;
+}
+
+#HangAap {
+    width: 22vw;
+    top: 20vh;
     position: absolute;
     left: 30vw;
 }
 
-#HangAapNor2 {
-    width: 18%;
-    top: 18vw;
+#veranderButtons {
     position: absolute;
     left: 50vw;
 }

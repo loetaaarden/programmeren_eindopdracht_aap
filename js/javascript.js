@@ -1,62 +1,54 @@
 
 //constante
 const h2 = document.querySelector("h2");
-const btnnaam = document.querySelector("#naam");
-const btnachtergrond = document.querySelector("#veranderachtergrond");
-const aapje = document.querySelector("#HangAapNor1");
+const btnnaam = document.getElementById("naam");
+const btnachtergrond = document.getElementById("veranderAchtergrond");
+const btnAap = document.getElementById("btnAap");
+const aapje = document.querySelector("#HangAap");
 const btnmuziek = document.getElementById("btnMuziek");
 const audio = new Audio("audio/Littletricks().mp3");
+const achtergrond = ["/images/achtergrond_bloessombos.png", "/images/achtergrond_donkergroenbos.png", "/images/achtergrond_groenbos.png" ];
+const achtergrondPlaatje = document.querySelector("#achtergrond");
+const VerschilApen = ["/images/hangende_aap", "/images/opznkop_aap", "/rechthangende_aap"];
 
-let achtergrond = document.querySelector("Achtergrond");
+//max lets
+let Voedsel = 100;
+let Energie = 100;
+let Plezier = 100;
 
 function SpeelMuziek() {
     audio.play(); // deze tag heb ik gevonden op de site stackoverflow.com
 }
 
-
-let lampStatus = false
-
-function AapAnders(){
-    if (lampStatus == true){
-        aapje.src = "images/opznkop_aap_normaal.png"
-        lampStatus = false;
-        } else {
-        aapje.src = "images/rechthangend_aap_normaal.png"
-        lampStatus = true;
-    }
-}
-
-/*
-let aftel = 10
-
-while (aftel>0) {
-    console.log(aftel);
-    aftel--;
-}
-
-for (let i=10; i > 0; i--) {
-    console.log(i);
-}
-*/
-
-//geef eten
-function eten(voedsel) {
-    console.log("Ik eet nu " + voedsel);
-}
-eten("banaan");
+function veranderAap () {
+    const getal = Math.floor(Math.random() * 3);
+    if(getal == 0) {
+        aapje.src = "./images/hangende_aap.png"
+    } else if(getal == 1) {
+        aapje.src = "./images/opznkop_aap.png"
+    }  else{
+        aapje.src = "./images/rechthangend_aap.png"
+    }  
+}   
 
 //verander de naam
 function naam () {
     h2.textContent = "jan";
 }
-/*
-function achtergrond () {
-    achtergrond.src = "images/achtergrond_groenbos.png";
-    console.log("achtergrond"); 
+
+function veranderAchtergrond () {
+    const getal = Math.floor(Math.random() * 3);
+    if(getal == 0) {
+        achtergrondPlaatje.src = "./images/achtergrond_donkergroenbos.png"
+    } else if(getal == 1) {
+        achtergrondPlaatje.src = "./images/achtergrond_groenbos.png"
+    }  else{
+        achtergrondPlaatje.src = "./images/achtergrond_bloessombos.png"
+    }
+    
 }
-*/
 
 btnmuziek.addEventListener('click', SpeelMuziek);
-aapje.addEventListener('click', AapAnders);
-// btnachtergrond.addEventListener("click", achtergrond);
 btnnaam.addEventListener("click", naam);
+btnAap.addEventListener("click", veranderAap);
+btnachtergrond.addEventListener("click", veranderAchtergrond);
