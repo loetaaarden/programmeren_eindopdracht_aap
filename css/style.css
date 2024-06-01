@@ -18,6 +18,8 @@ body {
 #veranderAchtergrond {
     position: absolute;
     top: 20vw;
+    max-width: 5vw;
+    left: 3vw;
 }
 
 /* iconen */
@@ -49,17 +51,16 @@ h1 {
 
 #btnMuziek {
     position: absolute;
-    top: 25vw;
-}
-
-#btnStopMuziek {
-    position: absolute;
-    top: 27vw;
+    top: 28vw;
+    max-width: 5vw;
+    left: 3vw;
 }
 
 #naam {
     position: absolute;
-    top: 15vw;
+    top: 12vw;
+    max-width: 5vw;
+    left: 3vw;
 }
 
 #HangAap {
@@ -92,18 +93,84 @@ h1 {
 
 #btnAap {
     position: absolute;
-    top: 15vw;
+    top: 12vw;
     left: 92vw;
+    max-width: 5vw;
 }
 
 #btnBanaan {
     position: absolute;
     top: 20vw;
-    left: 92.5vw;
+    left: 92vw;
+    max-width: 5vw;
 }
 
 #btnWater {
     position: absolute;
-    top: 25vw;
-    left: 93vw;
+    top: 28vw;
+    left: 92vw;
+    max-width: 5vw;
+}
+
+.jumpscare  {
+    visibility: hidden;
+}
+
+#jumpscare {
+    position: absolute;
+    width: 100%;
+}
+
+.banaan {
+    visibility: hidden;
+}
+
+.water {
+    visibility: hidden;
+}
+
+#banaan {
+    position: absolute;
+    width: 60%;
+    top: 26vh; 
+    left: 20vw;
+}
+
+#water {
+    position: absolute;
+    width: 60%;
+    top: 26vh; 
+    left: 20vw;
+}
+
+.gameover {
+    visibility: hidden;
+}
+
+#gameover {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 80vw;
+    height: 45vw;
+    position: absolute;
+    top: 15vh; 
+    left: 10vw;
+}
+
+#gameover p {
+    color: azure;
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#gameover button {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%; 
+    left: 44%;
+    padding: 1.5%;
+    background-color: rgb(173, 22, 22);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

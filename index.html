@@ -8,34 +8,45 @@
     <script src="js/javascript.js" defer></script>
     <link rel="icon" href="images/opznkop_aap.png">
 </head>
-<body>
-    
+<body>   
     <h1>Hallo ik ben HENK de aap</h1>
     
     <div id="iconen">
-        <img src="images/voedsel.png" alt="voedsel icoon"> <!--source: https://images.app.goo.gl/VWTVCU3GtQzUrWk47 -->
-        <img src="images/bliksem.png" alt="bliksem icoon"> <!--source: https://images.app.goo.gl/uTmGzaRTCu1WuwKq8 -->
-        <img src="images/smiley.png" alt="smiley icoon"> <!--source: https://images.app.goo.gl/e6oYPvV6fb3Epy3c7 -->
+        <img id="voedselIcoon" src="images/voedsel.png" alt="voedsel icoon"> 
+        <img id="bliksemIcoon" src="images/bliksem.png" alt="bliksem icoon"> 
+        <img id="smileyIcoon" src="images/smiley.png" alt="smiley icoon"> 
     </div>
 
-    <button id="naam">verander naam</button>
-    <button id="veranderAchtergrond">Verander achtergrond</button>
-    <button id="btnMuziek">Speel Muziek</button>
-    <button id="btnStopMuziek">Stop Muziek</button>
+    <img id="naam" src="images/btn_naam.png" alt="button naam">
+    <img id="veranderAchtergrond" src="images/btn_achtergrond.png" alt="achtergrond button">
+    <img id="btnMuziek" src="images/muziek_uit.png" alt="muziek uit button">
 
-    <button id="btnAap">Bewegen</button>
-    <button id="btnBanaan">Banaan</button>
-    <button id="btnWater">Water</button>
+    <img id="btnAap" src="images/btnBeweeg.png" alt="bewegen button">
+    <img id="btnBanaan" src="images/btnBanaan.png" alt="banaan button">
+    <img id="btnWater" src="images/btnWater.png" alt="water button">
     
     <div id="procent">
         <p id="voedselProcent">100%</p>
-        <p id="energieProcent">100%</p>
+        <p class="energieProcent" id="energieProcent">100%</p>
         <p id="plezierProcent">100%</p>
     </div>
+    
+
 
     <img id="achtergrond" src="images/achtergrond_donkergroenbos.png" alt="achtergrond van donker bos">
 
     <img id="HangAap" src="images/hangende_aap.png" alt="hangende aap in een boom">
+
+    <img class="banaan" id="banaan" src="images/banaan.png" alt="banaan">
+    <img class="water" id="water" src="images/water.png" alt="water">
+
+    <div id="gameover" class="gameover">
+        <p>Jammer, je hebt je aap dood laten gaan. <br>
+            Volgende keer beter</p>
+        <button id="reset">Play Again</button>
+    </div>
+
+    <img class="jumpscare" id="jumpscare" src="images/jumpscare.gif" alt="jumpscare gif"> 
     
 </body>
 </html>
