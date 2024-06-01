@@ -35,7 +35,6 @@ const plezierTekst = document.getElementById("plezierProcent");
 
 //dit zijn de constante voor de jumpscare
 const jumpscare = document.getElementById("jumpscare");
-// const jumpscareAudio = new Audio("audio/jumpscare_audio.mp3");
 
 //dit zijn de constante voor het gameoverscherm
 const gameover = document.querySelector("#gameover");
@@ -149,14 +148,11 @@ function WegWater() {
 }
 
 function ShowJumpscare() {
-    // jumpscareAudio.play();
     jumpscare.classList.toggle("jumpscare"); //de jumpscare is een animatie     
 }
 
 function HideJumpscare() {
     jumpscare.classList.toggle("jumpscare");
-    // jumpscareAudio.pause(); 
-    // jumpscareAudio.currentTime = 0;
 }
 
 function GameOverScherm() {
@@ -188,8 +184,8 @@ setInterval(VoedselOmlaag, 1400);
 setInterval(EnergieOmlaag, 1000);
 setInterval(PlezierOmlaag, 1800);
 
-// setTimeout(ShowJumpscare, 30000);
-// setTimeout(HideJumpscare, 31000);
+setTimeout(ShowJumpscare, 30000);
+setTimeout(HideJumpscare, 30500);
 
 //EVENTLISTNERS
 
