@@ -147,6 +147,7 @@ function WegWater() {
     water.classList.toggle("water");
 }
 
+//dit is de functie voor de jumpscare
 function ShowJumpscare() {
     jumpscare.classList.toggle("jumpscare"); //de jumpscare is een animatie     
 }
@@ -155,6 +156,7 @@ function HideJumpscare() {
     jumpscare.classList.toggle("jumpscare");
 }
 
+//dit is de functie voor als je hebt verloren
 function GameOverScherm() {
     if(maxEnergie == 0 || maxPlezier == 0 || maxVoedsel == 0) {
         aapje.src = "./images/dode_aap.png"; 
@@ -163,6 +165,7 @@ function GameOverScherm() {
     } 
 }
 
+//deze functie is om opnieuw te beginnen
 function PlayAgain() {
     window.location.reload(); //source: https://sentry.io/answers/how-do-i-refresh-a-page-using-javascript/
 }
@@ -201,4 +204,5 @@ btnAap.addEventListener("click", VeranderAap);
 btnBanaan.addEventListener("click", VoerBanaan);
 btnWater.addEventListener("click", VoerWater);
 
+//eventlistner om opnieuw te beginnen
 btnReset.addEventListener("click", PlayAgain);
